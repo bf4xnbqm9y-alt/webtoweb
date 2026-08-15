@@ -127,7 +127,7 @@ class TelegramAgent extends Command
 
         try {
             $apiResponse = Http::withoutVerifying()->timeout(20)->post(
-                "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={$geminiKey}",
+                "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.7-flash:generateContent?key={$geminiKey}",
                 [
                     'contents' => [
                         [
